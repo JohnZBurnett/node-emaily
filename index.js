@@ -1,8 +1,9 @@
-require('./models/User'); 
+
 
 const express = require('express');
 const mongoose = require('mongoose'); 
-const passportConfig = require('./services/passport');
+require('./models/User'); 
+require('./services/passport');
 const keys = require('./config/keys')
 
 
