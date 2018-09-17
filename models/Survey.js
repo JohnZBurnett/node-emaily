@@ -6,4 +6,6 @@ const surveySchema = new Schema({
     body: String,
     subject: String,
     recipients: [String]
-})
+});
+
+mongoose.model('surveys', surveySchema); 
