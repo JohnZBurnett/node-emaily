@@ -13,7 +13,9 @@ class Mailer extends helper.Mail {
         this.body = new helper.Content('text/html', content); 
         this.recipients = this.formatAddresses(recipients); 
         this.addContent(this.body); 
-        this.addClickTracking(); 
+        this.addClickTracking();
+        this.addRecipients();  
+        console.log("OUR MAILER: ", this); 
     }
 
     formatAddresses(recipients) {
@@ -31,10 +33,11 @@ class Mailer extends helper.Mail {
     }
 
     addRecipients() {
-        const personalize = new helper.Personalization(); 
-        this.recipients.forEach(recipient => {
+        const personalize = new helper.Personalization();
+        this.recipients.forEach( recipient => {
             personalize.addTo(recipient); 
-        });
+        })
+
         this.addPersonalization(personalize); 
     }
 
