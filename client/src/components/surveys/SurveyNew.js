@@ -1,6 +1,6 @@
-import { React, Component } from 'react';
+import React, { Component } from 'react';
 
-class surveyNew extends Component {
+class SurveyNew extends Component {
     render() {
         return(
             <div>
@@ -10,4 +10,4 @@ class surveyNew extends Component {
     }
 }
 
-export default surveyNew; 
+export default SurveyNew; 
