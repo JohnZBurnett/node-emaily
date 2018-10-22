@@ -4,7 +4,15 @@ import React, { Component } from 'react';
 export default () => {
     return(
         <div>
-            SurveyField
+            <input />
         </div>
     )
 }
+
+/*
+ <Field 
+                    type="text"
+                    name="surveyTitle"
+                    component="input"
+                    />
+*/
