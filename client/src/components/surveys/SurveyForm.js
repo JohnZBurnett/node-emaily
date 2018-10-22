@@ -14,8 +14,8 @@ class SurveyForm extends Component {
                     name="surveyTitle"
                     component="input"
                     />
-                </form>
                 <button type="submit">Submit</button>
+                </form>
             </div>
         ); 
     }
