@@ -6,11 +6,16 @@ class SurveyForm extends Component {
     render() {
         return(
             <div>
-                <Field 
-                  type="text"
-                  name="surveyTitle"
-                  component="input"
-                />
+                <form 
+                    onSubmit={this.props.handleSubmit( values => console.log(values))}
+                >
+                    <Field 
+                    type="text"
+                    name="surveyTitle"
+                    component="input"
+                    />
+                </form>
+                <button type="submit">Submit</button>
             </div>
         ); 
     }
