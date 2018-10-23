@@ -8,7 +8,30 @@ class SurveyForm extends Component {
     renderFields() {
         return(
             <div>
-                <Field type="text" name="title" component={SurveyField} />
+                <Field 
+                  type="text" 
+                  name="title" 
+                  label="Survey Title" 
+                  component={SurveyField} 
+                />
+                <Field 
+                  type="text" 
+                  name="title" 
+                  label="Subject Line" 
+                  component={SurveyField} 
+                />
+                <Field 
+                  type="text" 
+                  name="title" 
+                  label="Email Body" 
+                  component={SurveyField} 
+                />
+                <Field 
+                  type="text" 
+                  name="title" 
+                  label="Recipient List" 
+                  component={SurveyField} 
+                />
             </div>
         );
     }
