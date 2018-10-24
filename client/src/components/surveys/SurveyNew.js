@@ -6,9 +6,17 @@ import SurveyFormReview from './SurveyFormReview';
 class SurveyNew extends Component {
 
     state = {
-        formReview: false
+        showFormReview: false
     }; 
-    
+
+    renderContent() {
+        if (this.state.showFormReview) {
+            return <SurveyFormReview />
+        } else {
+            return <SurveyForm />
+        }
+    }
+
     render() {
         return(
             <div>
