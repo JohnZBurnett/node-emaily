@@ -12,7 +12,7 @@ const SurveyFormReview = ({onCancel}) => {
               className="yellow darken-3 btn-flat"
               onClick={onCancel}
             >
-              Cancel
+              Back
             </button>
         </div>
     );
